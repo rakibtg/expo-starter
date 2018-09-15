@@ -23,10 +23,10 @@ export default class MIText extends PureComponent {
   render() {
     const {bold, italic, size, color, height, 
       padding, paddingV, paddingH, style,
-      inline, center, left, right } = this.props
+      center, left, right } = this.props
 
     const wrapperStyle = {
-      width: inline ? null : '100%'
+      width: (center || left || right) ? '100%' : null
     }
 
     const usersStyle = style ? style : {}

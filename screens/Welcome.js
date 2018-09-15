@@ -12,7 +12,7 @@ export default class Welcome extends React.Component {
   render() {
     return (
       <Layout style={styles.container}>
-        <Text inline>Hello</Text>
+        <Text>Hello</Text>
       </Layout>
     )
   }
